@@ -1,0 +1,17 @@
+{
+  "name": "sportchef-web",
+  "version": "0.0.0",
+  "homepage": "https://github.com/McPringle/sportchef-web",
+  "authors": [
+    "Marcus Fihlon <marcus@fihlon.ch>"
+  ],
+  "main": "index.html",
+  "license": "AGPL",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
