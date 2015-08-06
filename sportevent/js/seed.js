@@ -3,22 +3,13 @@
 
     is: 'sport-event',
     
-    handleClick:function() {
-      alert('Ow!');
+    handleEvent:function() {
+      console.log("...  handleClick!");
+      this.sayHello();
     },
 
     properties: {
-
-      /**
-       * `fancy` indicates that the element should don a monocle and tophat,
-       * while checking its pocket watch.
-       */
-      fancy: Boolean,
-      event : {
-            type: Object
-      }
-      
-
+            event:Object
     },
 
     // Element Lifecycle
@@ -48,14 +39,7 @@
       // Use this to clean up anything you did in `attached`.
     },
 
-    // Element Behavior
-
-    /**
-     * The `seed-element-lasers` event is fired whenever `fireLasers` is called.
-     *
-     * @event seed-element-lasers
-     * @detail {{sound: String}}
-     */
+  
 
     /**
      * Sometimes it's just nice to say hi.
@@ -63,20 +47,12 @@
      * @param {string} greeting A positive greeting.
      * @return {string} The full greeting.
      */
-    sayHello: function(greeting) {
-      var response = greeting || 'Hello World!';
-      return 'seed-element says, ' + response;
-    },
-
-    /**
-     * Attempts to destroy this element's enemies with an any beam of light!
-     *
-     * Or, at least, dispatches an event in the vain hope that someone else will
-     * do the zapping.
-     */
-    fireLasers: function() {
-      this.fire('seed-element-lasers', {sound: 'Pew pew!'});
+    sayHello: function() {
+      console.log("event is:"+ this.event.title);  
+      return false;
     }
+
+  
 
   });
 

@@ -36,8 +36,8 @@ Example:
 
   <template>
       
-    <ul title="Event id is = {{event.eventid}}">
-         <li><span>{{event.date.dayOfMonth}}</span> {{event.date.month}} {{event.date.year}}</li>
+    <ul title="id is = {{event.eventid}}" on-click="handleEvent">
+         <li ><span>{{event.date.dayOfMonth}}</span> {{event.date.month}} {{event.date.year}}</li>
         <li>{{event.title}}</li>
         <li>{{event.location}}</li>
     
